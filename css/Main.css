@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+header{
+    background-color: rgb(232, 107, 236);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+header h1{
+    color:white;
+    font-size: 50px;
+}
+
+header img{
+    border-radius: 170px;
+    width: 300px;
+} /* Creates an avatar circle */
+
+main{
+    max-width: 800px;
+    margin: 0 auto; 
+    /* Margin: Centers everything correctly. */
+    padding: 0 20px;
+}
+
+main img{
+    max-width: 100%;
+}
+
+h2{
+    font-size: 35px;
+    color: teal;
+    margin: 40px 0 10x;
+}
+
+a{
+    color: rgb(114, 15, 15);
+}
+a:hover{
+    color: #483a94
+}
+
+footer{
+    background-color: rgb(232, 107, 236);
+    text-align: center;
+    color: white;
+}
+
+footer p{
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Makes the line horizontal somehow, yay */
+li.horizontal { 
+    display: inline-block;
+    margin-right: 20px;
+}
