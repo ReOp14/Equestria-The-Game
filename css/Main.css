@@ -1,14 +1,28 @@
+@font-face {
+    src: url(../fonts/BOOKOS.TTF);
+    font-family: BOOKOS;
+} @font-face {
+    src: url(../fonts/MVBOLI.TTF);
+    font-family: MVBOLI;
+} @font-face {
+    src: url(../fonts/BOOKOSB.TTF);
+    font-family: BOOKOSB;
+} @font-face {
+    src: url(../fonts/BOOKOSBI.TTF);
+    font-family: BOOKOSBI;
+}
+
 body{
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'BOOKOS', Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 30px;
 }
-
+/* Header */
 header{
-    background-color: rgb(232, 107, 236);
+    background-color: rgb(135, 61, 1);
     text-align: center;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -22,8 +36,28 @@ header img{
     width: 300px;
 } /* Creates an avatar circle */
 
+header input{ 
+    border: 3px solid rgb(87, 39, 1);
+    padding: 10px;
+    margin-right: 20px;
+}
+/*input{ 
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+transform{
+    display: block;
+    transform:translate(0px, 15px);
+}
+
+/* End Header */
 main{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto; 
     /* Margin: Centers everything correctly. */
     padding: 0 20px;
@@ -37,23 +71,40 @@ h2{
     font-size: 35px;
     color: teal;
     margin: 40px 0 10x;
+    text-align: center;
 }
-
+/* Hover */
 a{
-    color: rgb(114, 15, 15);
+    color: rgb(255, 255, 255);
 }
 a:hover{
-    color: #483a94
+    color: #46b5e9;
 }
 
+/* Header Hover */
+a.header{
+    color: rgb(255, 255, 255);
+}
+a.header:hover{
+    color: #46b5e9;
+}
+/* Footer Hover */
+a.footer{
+    color: rgb(87, 87, 87);
+}
+a.footer:hover{
+    color: #46b5e9;
+}
+
+/* Footer */
 footer{
-    background-color: rgb(232, 107, 236);
+    background-color: rgb(34, 0, 105);
     text-align: center;
     color: white;
 }
 
 footer p{
-    margin: 0;
+    margin: -5px;
 }
 
 ul {
@@ -66,4 +117,188 @@ ul {
 li.horizontal { 
     display: inline-block;
     margin-right: 20px;
+}
+/* Signup Form */
+.signup-form input{ 
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+button, signup-form{ /* This should only mean buttons in the signup form */
+    margin: auto;
+    width: 30%;
+    border: 3px solid rgb(56, 173, 224);
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* <div class="signup-form-form"> </div> */
+.signup-form p{ /* This should only mean P in the signup form */
+    text-align: center;
+    color:rgb(93, 170, 214);
+}
+
+/* FAQ */
+MVBoli{
+    font-family: 'MVBOLI';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 48px;
+    /* This is how you properly center text. */
+    display:block;
+    text-align: center;
+    margin-top: 25px;
+}
+OSB{
+    font-family: 'BOOKOSB';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+}
+OS{
+    font-family: 'BOOKOS';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: 25px;
+}
+Gumz{
+    font-family: 'BOOKOSBI';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    margin-left: 25px;
+}
+/* Slider Images */ 
+body {  
+    margin: 0;  
+    background: #e6e6e6;  
+}  
+.showSlide {  
+    display: none  
+}  
+.showSlide img {  
+    width: 100%;  
+}  
+.slidercontainer {  
+    max-width: 1000px;  
+    position: relative;  
+    margin: auto;  
+}  
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 16px;  
+    margin-top: -22px;  
+    color: rgb(56, 0, 209);  
+    font-weight: bold;  
+    font-size: 18px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+}  
+.left:hover, .right:hover {  
+    background-color: rgba(255, 0, 0, 0.8);  
+}  
+.content {  
+    color: #eff5d4;  
+    font-size: 30px;  
+    padding: 8px 12px;  
+    position: absolute;  
+    top: 10px;  
+    width: 100%;  
+    text-align: center;  
+}  
+.active {  
+    background-color: #717171;  
+}  
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+/* For Home Old Style Bold texts. */
+.home OSB{
+    font-size: 45px;
+    display:block;
+    text-align: center;
+}
+/* Move an image left for example */
+.moveleft{
+    float: left;
+}
+/* Move text to the right */
+.moveright {
+    float:right;
+    transform: position(100px, 100px);
+}
+
+
+
+.home #button {
+    width: 12em;
+    border: 3px solid black;
+    background: #ffe;
+    border-radius: 5px;
+    display:block;
+    position: absolute;
+}
+.home a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color:black;
+}
+.home a:hover {
+    color: red;
+    background: #eff;
+}
+/* Home Image Translations */
+buttons {
+    float: right;
+    transform: translate(-300px, -250px);
+}
+.Image1 img{
+    float: left;
+}
+.Signup1 {
+    transform: translate(0, 150px);
+    display: block;
+    float: left;
 }
